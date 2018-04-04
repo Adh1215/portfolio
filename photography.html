@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/style.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Serif" rel="stylesheet">
+</head>
+
+<body class="row">
+    <header>
+        <nav class="flex-container nav">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <div class="dropdown">
+                <a class="dropbutton">Portfolio</a>
+                <div class="dropdown-content">
+                    <a href="writing.html" class="writingnav">Writing</a>
+                    <a href="programming.html" class="programmingnav">Programming</a>
+                    <a href="photography.html" class="photonav">Photography</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="slideshow">
+            <p>I also do a bit of photograpy when I'm not inside gaming, doing homework, or coding. The first photo was not taken by me, but it was edited by yours truly. I prefer my images to be higher contrast and saturation than they normally are; I hope you enjoy the sample of my pictures!</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="Spag fade" style="display:block;">
+                <div class="numbertext">1/4</div>
+                <img src="img/dog-Edit.jpg" alt="dog edit" class="dog" style="width:100%">
+                <div class="text">Emphasis on dog</div>
+            </div>
+
+            <div class="Spag fade">
+                <div class="numbertext">2/4</div>
+                <img src="img/HDR-landscape-andrew.jpg" style="width:100%">
+                <div class="text">HDR Image</div>
+            </div>
+
+            <div class="Spag fade">
+                <div class="numbertext">3/4</div>
+                <img src="img/LAB-color-activity-Andrew.jpg" style="width:100%">
+                <div class="text">HDR Image 2</div>
+            </div>
+
+            <div class="Spag fade bigboi">
+                <div class="numbertext">4/4</div>
+                <img src="img/panorama.jpg" style="width:100%" class="pan">
+                <div class="pantext">HDR Panorama</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot current" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <footer>
+        <section class="flex-container footer">
+            <div class="footerlinks">
+                <a href="">email</a><br>
+                <a href="">linkedin</a><br>
+                <a href="">facebook</a>
+            </div>
+            <div class="copyright">copyright</div>
+            <div class="phone">phone number</div>
+        </section>
+    </footer>
+</body>
+
+</html>
