@@ -31,9 +31,16 @@ body {
     text-indent: 30px;
 }
 
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    font-size: 200%;
+}
+
 /*font-family: 'IBM Plex Sans Condensed', sans-serif; ----body font*/
 
 /*font-family: 'IBM Plex Serif', serif; ----header font*/
+
+/*font-family: 'Dancing Script', cursive; ----cursive font*/
 
 /* -------- nav ------------- */
 
@@ -110,13 +117,22 @@ nav a:visited,
 }
 
 .aboutme {
-    font-size: 120%
+    font-size: 120%;
+    margin-top: 30px;
 }
 
 .home-mid {
     padding: 20px;
     font-family: 'IBM Plex Serif', serif;
+}
 
+.welcome {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 500%;
+}
+
+.aboutme_img {
+    margin-top: 30px;
 }
 
 /* ------- resume Page ------- */
@@ -132,31 +148,51 @@ nav a:visited,
 
 /* ------- writing Page ------- */
 
+.mlaintro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
 .essaytitle {
     text-align: center;
 }
 
+.writingarticles h2 {
+    font-size: 170%;
+}
+
 .wargames,
 .mrkrabs {
-    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.workscited {
+    border-bottom: solid 1px black;
+    display: inline-block;
+    margin-bottom: 7px;
 }
 
 /* --------programming page ---------*/
+
+.programintro,
+.beeg,
+.smol {
+    margin: 40px 0;
+}
 
 .programintro {
     font-family: 'IBM Plex Serif', serif;
     font-size: 1.8em;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
+
 .smol {
     height: 280px;
 }
 
 .beeg {
     width: 100%;
-    height: 500px;
 }
 
 .link4 {
@@ -174,16 +210,20 @@ nav a:visited,
     padding: 0 10px;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
+
 .img5 {
     width: 100%;
 }
+
 .link5,
 .text5 {
     margin: auto 0;
 }
+
 .link5 {
     width: 40%;
 }
+
 .text5 {
     width: 60%;
 }
@@ -210,6 +250,9 @@ nav a:visited,
 
 .slideshow {
     text-align: center;
+    font-size: 130%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .numbertext {
@@ -294,62 +337,52 @@ nav a:visited,
     text-align: center;
 }
 
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.current,
-.dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
 /* --------contact --------- */
-.formdiv, .thanks {
+
+.formdiv,
+.thanks {
     width: 48%;
     margin: 1%;
     margin-bottom: 30px;
     margin-top: 20px;
 }
-.formtext, .formemail, .formtextarea{
+
+.formtext,
+.formemail,
+.formtextarea {
     width: 100%;
     margin: 3px 0;
 }
+
 .forminput {
     margin-left: 43%;
 }
+
+.thanks h2 {
+    font-size: 200%
+}
+
+.commentform {
+    margin-top: 40px;
+}
+
+.reachme {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.reachme > div {
+    width: 17%;
+}
+
+.reachme img {
+    width: 100%;
+}
+
+.reachme p {
+    text-align: center
+}
+
 /* --------- footer -------- */
 
 footer {
@@ -381,4 +414,24 @@ footer div {
 
 footer a:visited {
     color: #fff;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    width: 100px;
+    right: 24%;
+    bottom: 38%;
+}
+
+.fadearrow {
+    transition: 0.5s;
+}
+
+.show {
+    position: absolute;
+    width: 100px;
+    right: 24%;
+    bottom: 38%;
+    display: block;
 }

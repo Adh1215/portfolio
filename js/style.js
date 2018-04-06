@@ -35,26 +35,30 @@ function validate() {
     var email = document.getElementById("formemail").value
     var comment = document.getElementById("comments").value
     if (name == "" && email !== "" && comment !== "") {
-        alert ("Please enter your name")
-    }
-    else if (name !== "" && email == "" && comment !== "") {
-        alert ("Please enter your email")
-    }
-    else if (name !== "" && email !== "" && comment == "") {
-        alert ("Please enter a comment or question.")
-    }
-    else if (name == "" && email == "" && comment !== "") {
-        alert ("Please enter your name and email")
-    }
-    else if (name !== "" && email == "" && comment == "") {
-        alert ("Please enter your email and any comments or questions.")
-    }
-    else if (name == "" && email !== "" && comment == "") {
-        alert ("Please enter your name and any comments or questions.")
-    }
-    else if (name == "" && email == "" && comment == "") {
-        alert ("Please enter your name, email, and any comments or questions.")
-    }
-    else {}
+        alert("Please enter your name")
+    } else if (name !== "" && email == "" && comment !== "") {
+        alert("Please enter your email")
+    } else if (name !== "" && email !== "" && comment == "") {
+        alert("Please enter a comment or question.")
+    } else if (name == "" && email == "" && comment !== "") {
+        alert("Please enter your name and email")
+    } else if (name !== "" && email == "" && comment == "") {
+        alert("Please enter your email and any comments or questions.")
+    } else if (name == "" && email !== "" && comment == "") {
+        alert("Please enter your name and any comments or questions.")
+    } else if (name == "" && email == "" && comment == "") {
+        alert("Please enter your name, email, and any comments or questions.")
+    } else {}
+
+}
+var count = 0;
+
+function showArrow() {
+    document.getElementById('arrow').classList.add('show');
+    document.getElementById('arrow').classList.remove('arrow');
+}
+function hidearrow() {
+    document.getElementById('arrow').classList.remove('show');
+    document.getElementById('arrow').classList.add('arrow');
     
 }

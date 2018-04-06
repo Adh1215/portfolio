@@ -26,9 +26,9 @@
         </nav>
     </header>
     <section class="content flex-container">
-       <div class="thanks">
-           <h2>Thank you</h2>
-            Thanks for taking the time to visit my website! I hope that visiting it has shown you what I’m capable of and has increased the odds that you choose me as an employee. I will only improve from here, as I am still relatively new to coding in general. Work ethic is something I excel in, and thanks to that I can learn how to do nearly anything with a surprisingly small amount of time. Even if not now, I hope you’ll consider me in another year or two, and you can see for yourself how quickly I improve. Please, feel free to reach out to me through facebook, linkedin, email, or my phone.
+        <div class="thanks">
+            <h2>Thank you</h2>
+            Thanks for taking the time to visit my website! I hope that visiting it has shown you what I’m capable of and has increased the odds that you choose me as an employee. I will only improve from here, as I am still relatively new to coding in general. Work ethic is something I excel in, and thanks to that I can learn how to do nearly anything with a surprisingly small amount of time. Even if not now, I hope you’ll consider me in another year or two, and you can see for yourself how quickly I improve. Please, feel free to reach out to me through Linkedin, Instagram, my phone, or Github.
         </div>
         <div class="formdiv">
             <form action="" class="commentform">
@@ -38,33 +38,35 @@
                 <input type="submit" class="forminput" id="forminput" onclick="validate()">
             </form>
         </div>
-        <div>
-            <img src="" alt="linkedin logo">
-            <p>Linkedin</p>
-        </div>
-        <div>
-            <img src="" alt="gmail logo">
-            <p>Gmail</p>
-        </div>
-        <div>
-            <img src="" alt="iphone phone image">
-            <p>Phone</p>
-        </div>
-        <div>
-            <img src="" alt="facebook logo">
-            <p>Facebook</p>
-        </div>
-        
+        <article class="flex-container reachme">
+            <div class="linkedindiv">
+                <img src="img/linkedin_logo.png" alt="Linkedin logo">
+                <p>Linkedin</p>
+            </div>
+            <div class="igdiv">
+                <img src="img/ig_logo.png" alt="IG logo">
+                <p>Instagram</p>
+            </div>
+            <div class="iphonediv">
+                <img src="img/iphone_phone_logo.png" alt="iphone phone image">
+                    <p onmouseover="showArrow()" onmouseout="hidearrow()">Phone</p>
+            </div>
+            <div class="gitdiv">
+                <img src="img/github_logo.png" alt="GitHub logo">
+                <p>GitHub</p>
+            </div>
+        </article>
     </section>
     <footer>
-        <section class="flex-container footer">
+        <section class="flex-container">
             <div class="footerlinks">
-                <a href="">Email</a><br>
-                <a href="">Linkedin</a><br>
-                <a href="">Facebook</a>
+                <a href="https://github.com/Adh1215">Github</a><br>
+                <a href="https://www.linkedin.com/in/andrew-dominguez-hansen-25257915a/?trk=onboarding-landing&dl=no">Linkedin</a><br>
+                <a href="https://www.instagram.com/adominguezhansen1215/saved/?hl=en">Instagram</a>
             </div>
-            <div class="copyright">Copyright</div>
-            <div class="phone">phone number: <br> (559) 285-3662</div>
+            <div class="copyright">&copy; Andrew Dominguez-Hansen 2018</div>
+            <div class="phone">Phone number: <br>(559) 285-3662</div>
+            <img src="img/arrow.png" alt="this is the phone number" class="arrow fadearrow" id="arrow">
         </section>
     </footer>
 </body>
