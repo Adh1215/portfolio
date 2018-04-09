@@ -35,6 +35,9 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 200%;
 }
+.underline {
+    text-decoration: underline;
+}
 
 /*font-family: 'IBM Plex Sans Condensed', sans-serif; ----body font*/
 
@@ -380,7 +383,7 @@ nav a:visited,
 }
 
 .reachme p {
-    text-align: center
+    text-align: center;
 }
 
 /* --------- footer -------- */
